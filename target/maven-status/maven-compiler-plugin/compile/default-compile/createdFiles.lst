@@ -4,6 +4,7 @@ com\example\stepcounter\controller\UserController.class
 com\example\stepcounter\model\LinkedAccount.class
 com\example\stepcounter\service\user\UserMapperImpl.class
 com\example\stepcounter\model\User.class
+com\example\stepcounter\dto\stepcounter\StepCounterOutputDto.class
 com\example\stepcounter\dto\user\UserInputDto.class
 com\example\stepcounter\common\AuthenticationResponseApi.class
 com\example\stepcounter\dto\stepcounter\StepCounterOuputDto.class
@@ -13,6 +14,7 @@ com\example\stepcounter\repository\DeviceAccountRepository.class
 com\example\stepcounter\StepcounterApplication.class
 com\example\stepcounter\model\StepCounter.class
 com\example\stepcounter\common\ResponseApi.class
+com\example\stepcounter\dto\stepcounter\StepCounterInputDto.class
 com\example\stepcounter\dto\user\UserLinkedAccountInputDto.class
 com\example\stepcounter\service\authentication\AuthenticationServiceImpl.class
 com\example\stepcounter\exceptions\CommandException.class
@@ -21,9 +23,12 @@ com\example\stepcounter\dto\deviceaccount\DeviceAccountInputDto.class
 com\example\stepcounter\dto\stepcounter\StepCounterOutDto.class
 com\example\stepcounter\repository\UserRepository.class
 com\example\stepcounter\service\stepcounter\StepCounterMapper.class
+com\example\stepcounter\controller\BadgeController.class
 com\example\stepcounter\service\user\UserService.class
+com\example\stepcounter\dto\stepcounter\BagdeOutputDto.class
 com\example\stepcounter\dto\user\UserChartOutputDto.class
 com\example\stepcounter\dto\authentication\OFJDto.class
+com\example\stepcounter\service\stepcounter\BadgeService.class
 com\example\stepcounter\controller\StepCounterController.class
 com\example\stepcounter\dto\user\UserOutputDto.class
 com\example\stepcounter\controller\AuthenticationController.class
@@ -34,4 +39,5 @@ com\example\stepcounter\service\user\UserMapper.class
 com\example\stepcounter\model\DeviceAccount.class
 com\example\stepcounter\dto\linkedaccount\GoogleTokenInputDto.class
 com\example\stepcounter\exceptions\ExceptionHandlerAdvice.class
+com\example\stepcounter\service\stepcounter\CalorieCalculator.class
 com\example\stepcounter\enums\ErrorCode.class

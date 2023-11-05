@@ -1,12 +1,15 @@
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\user\UserStatOutputDto.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\service\user\UserServiceImpl.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\stepcounter\StepCounterOuputDto.java
+D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\stepcounter\StepCounterOutputDto.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\controller\StepCounterController.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\model\StepCounter.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\user\UserInputDto.java
+D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\service\stepcounter\CalorieCalculator.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\service\authentication\AuthenticationServiceImpl.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\exceptions\ExceptionHandlerAdvice.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\deviceaccount\DeviceAccountInputDto.java
+D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\stepcounter\StepCounterInputDto.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\service\user\UserMapper.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\user\UserChartOutputDto.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\model\LinkedAccount.java
@@ -18,6 +21,7 @@ D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\service\authe
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\linkedaccount\GoogleTokenInputDto.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\repository\UserRepository.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\common\AuthenticationResponseApi.java
+D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\service\stepcounter\BadgeService.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\service\stepcounter\StepCounterService.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\service\user\UserService.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\enums\ErrorCode.java
@@ -25,8 +29,10 @@ D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\model\User.ja
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\user\UserOutputDto.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\stepcounter\StepCounterOutDto.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\authentication\OFJDto.java
+D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\controller\BadgeController.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\repository\LinkedAccountRepository.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\repository\StepCounterRepository.java
+D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\stepcounter\BagdeOutputDto.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\user\UserLinkedAccountInputDto.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\repository\DeviceAccountRepository.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\service\stepcounter\StepCounterMapper.java
