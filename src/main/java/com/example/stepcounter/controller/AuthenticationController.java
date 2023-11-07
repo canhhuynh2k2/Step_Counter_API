@@ -49,11 +49,11 @@ public class AuthenticationController {
 	}
 	
 	@PutMapping("/googleaccount/logout")
-	public ResponseEntity<ResponseApi> logoutLinkedAccount(@RequestHeader("idtoken") String googleIdToken) {
-		if(userService.refreshToken(googleIdToken)) {
+	public ResponseEntity<ResponseApi> logoutLinkedAccount(@RequestHeader("token") String token) {
+		if(userService.refreshToken(token)) {
 			return new ResponseEntity<ResponseApi>(new ResponseApi(true, "Đăng xuất thành công!"), HttpStatus.ACCEPTED);
 		}else {
-			return new ResponseEntity<ResponseApi>(new ResponseApi(false, "Đăng xuất không thành công!"), HttpStatus.ACCEPTED);
+			return new ResponseEntity<ResponseApi>(new ResponseApi(false, "Đăng xuất không thành công!"), HttpStatus.BAD_REQUEST);
 		}
 	}
 	
