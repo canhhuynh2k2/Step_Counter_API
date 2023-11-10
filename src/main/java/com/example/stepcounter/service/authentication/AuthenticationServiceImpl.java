@@ -67,8 +67,8 @@ public class AuthenticationServiceImpl implements AuthenticationService{
 		return user.getToken();
 	}
 	@Override
-	public String authenticateLinkedAccount(String googleIdToken) {
-		String info = getUserByGoogleApi(googleIdToken);
+	public String authenticateLinkedAccount(String googleAccessToken) {
+		String info = getUserByGoogleApi(googleAccessToken);
 		Gson gson = new Gson(); 
 	    OFJDto oFJDto = gson.fromJson(info, OFJDto.class);
 	    LinkedAccount linkedAccount = linkedAccountRepo.getById(oFJDto.getSub());
@@ -107,13 +107,13 @@ public class AuthenticationServiceImpl implements AuthenticationService{
 	public void refreshToken() {
 		
 	}
-	public String getUserByGoogleApi(String googleIdToken) {
+	public String getUserByGoogleApi(String googleAccessToken) {
 		HttpHeaders headers = new HttpHeaders();
 	    headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
 	    HttpEntity <String> entity = new HttpEntity<String>(headers);
 	      
 	    return restTemplate.exchange(
-	    		"https://www.googleapis.com/oauth2/v3/tokeninfo?id_token=" + googleIdToken, 
+	    		"https://www.googleapis.com/oauth2/v3/userinfo?access_token=" + googleAccessToken, 
 	    			HttpMethod.GET, entity, String.class).getBody();
 	}
 	
