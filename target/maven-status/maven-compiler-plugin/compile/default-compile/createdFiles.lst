@@ -1,3 +1,4 @@
+com\example\stepcounter\controller\RecommendationController.class
 com\example\stepcounter\service\stepcounter\StepCounterMapperImpl.class
 com\example\stepcounter\dto\user\UserStatOutputDto.class
 com\example\stepcounter\controller\UserController.class
@@ -17,6 +18,7 @@ com\example\stepcounter\common\ResponseApi.class
 com\example\stepcounter\dto\stepcounter\StepCounterInputDto.class
 com\example\stepcounter\dto\user\UserLinkedAccountInputDto.class
 com\example\stepcounter\service\authentication\AuthenticationServiceImpl.class
+com\example\stepcounter\service\recommendation\RecommendationService.class
 com\example\stepcounter\exceptions\CommandException.class
 com\example\stepcounter\service\authentication\AuthenticationService.class
 com\example\stepcounter\dto\deviceaccount\DeviceAccountInputDto.class
@@ -28,8 +30,10 @@ com\example\stepcounter\service\user\UserService.class
 com\example\stepcounter\dto\stepcounter\BagdeOutputDto.class
 com\example\stepcounter\dto\user\UserChartOutputDto.class
 com\example\stepcounter\dto\authentication\OFJDto.class
+com\example\stepcounter\dto\recommendation\RecommendationInputDto.class
 com\example\stepcounter\service\stepcounter\BadgeService.class
 com\example\stepcounter\controller\StepCounterController.class
+com\example\stepcounter\dto\recommendation\RecommendationOutputDto.class
 com\example\stepcounter\dto\user\UserOutputDto.class
 com\example\stepcounter\controller\AuthenticationController.class
 com\example\stepcounter\dto\deviceaccount\DeviceIDInputDto.class
