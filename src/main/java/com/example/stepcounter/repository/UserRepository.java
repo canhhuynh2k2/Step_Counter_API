@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import com.example.stepcounter.dto.user.UserChartOutputDto;
+import com.example.stepcounter.dto.user.UserEditInputDto;
 import com.example.stepcounter.dto.user.UserStatOutputDto;
 import com.example.stepcounter.model.User;
 
@@ -24,4 +25,6 @@ public interface UserRepository extends JpaRepository<User, Integer>{
 			+ "(SELECT SUM(sc.calo) FROM stepcounter sc WHERE sc.userId = u.id) as caloChart "
 			+ "FROM user u ORDER BY stepChart DESC LIMIT 50", nativeQuery = true)
 	List<UserChartOutputDto> getChartAll();
+	
+	UserEditInputDto save(UserEditInputDto updatedUser);
 }
