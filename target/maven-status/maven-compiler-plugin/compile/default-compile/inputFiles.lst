@@ -20,7 +20,6 @@ D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\controller\Au
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\controller\RecommendationController.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\deviceaccount\DeviceIDInputDto.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\service\authentication\AuthenticationService.java
-D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\user\UserEditInputDto.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\dto\linkedaccount\GoogleTokenInputDto.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\repository\UserRepository.java
 D:\Workspaces\stepcounter_v2\src\main\java\com\example\stepcounter\common\AuthenticationResponseApi.java
