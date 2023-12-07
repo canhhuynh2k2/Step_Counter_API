@@ -16,6 +16,7 @@ import org.springframework.web.client.RestTemplate;
 import com.example.stepcounter.dto.authentication.OFJDto;
 import com.example.stepcounter.dto.user.UserInputDto;
 import com.example.stepcounter.dto.user.UserLinkedAccountInputDto;
+import com.example.stepcounter.dto.user.UserOutputDto;
 import com.example.stepcounter.model.DeviceAccount;
 import com.example.stepcounter.model.LinkedAccount;
 import com.example.stepcounter.model.User;
@@ -117,4 +118,11 @@ public class AuthenticationServiceImpl implements AuthenticationService{
 	    			HttpMethod.GET, entity, String.class).getBody();
 	}
 	
+	@Override
+	public void deleteAccount(String token) {
+		UserOutputDto user = userService.getUser(token);
+		userService.refreshToken(token);
+		linkedAccountRepo.deleteByUserId(user.getId());
+		deviceAccountRepo.deleteByUserId(user.getId());
+	}
 }

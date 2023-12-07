@@ -9,4 +9,5 @@ public interface AuthenticationService {
 	public String registerDevice(UserInputDto userInputDto);
 	public boolean logoutLinkedAccount(String token);
 	public String registerLinkedAccount(UserLinkedAccountInputDto userInput);
+	public void deleteAccount(String token);
 }

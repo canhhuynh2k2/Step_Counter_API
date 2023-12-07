@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.example.stepcounter.dto.user.UserChartOutputDto;
 import com.example.stepcounter.model.User;
 
+
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer>{
 

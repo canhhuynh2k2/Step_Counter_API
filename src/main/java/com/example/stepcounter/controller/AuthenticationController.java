@@ -3,6 +3,7 @@ package com.example.stepcounter.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -70,5 +71,10 @@ public class AuthenticationController {
 	public ResponseEntity<AuthenticationResponseApi> registerLinkedAccount(@RequestBody UserLinkedAccountInputDto userInputDto){
 		String newToken = authService.registerLinkedAccount(userInputDto);
 		return new ResponseEntity<AuthenticationResponseApi>(new AuthenticationResponseApi(true,newToken, false), HttpStatus.ACCEPTED);
+	}
+	@DeleteMapping("/deleteaccount")
+	public ResponseEntity<ResponseApi> deleteAccount(@RequestHeader("token") String token) {
+		authService.deleteAccount(token);
+		return new ResponseEntity<ResponseApi>(new ResponseApi(true, "Xoá tài khoản thành công!"), HttpStatus.ACCEPTED);
 	}
 }
